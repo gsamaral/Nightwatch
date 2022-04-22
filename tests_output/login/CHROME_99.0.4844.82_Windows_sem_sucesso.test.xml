@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="login.sem_sucesso.test"
+    errors="0" failures="0" hostname="" id="" package="login" skipped="0"
+    tests="4" time="6.220" timestamp="">
+  
+    <testcase name="senha incorreta" classname="login.sem_sucesso.test" time="3.980" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="nao cadastrado" classname="login.sem_sucesso.test" time="1.016" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="email nao informado" classname="login.sem_sucesso.test" time="0.6050" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="senha nao informada" classname="login.sem_sucesso.test" time="0.6190" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
