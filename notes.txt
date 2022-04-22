@@ -5,4 +5,4 @@ Seletor CSS: para buscar classes, span e etc em CSS
 Hooks: Reduzir codigo, são ganchos para customizar funcoes com codigos de testes que são comuns em funções
 
 PageObject é um padrão de design que ajuda a aprimorar a manutenção de testes e reduzir a duplicação de código,
- também pode ser utilizado para descrever e documentar o fluxo de uma aplicação. 
+também pode ser utilizado para descrever e documentar o fluxo de uma aplicação. 

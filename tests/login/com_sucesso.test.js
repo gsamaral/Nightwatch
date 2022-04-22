@@ -1,20 +1,16 @@
 
 module.exports = {
+'@disabled': true,
 
-    '@disabled' : true,
      'login com sucesso': function (browser) {
         let userInfo = '.user .info span' //seletor CSS
-        let login = browser.page.login()
+        let login = browser.page.login() //aula sobre page objects
         let sidebar = browser.page.sidebar()
 
         browser.resizeWindow(1024, 768)
 
-        login.navigate()
-            .waitForElementVisible('@form', 3000)
-            .setValue('@emailInput', 'zumbi@dospalmares.com.br')
-            .setValue('@passInput', 'pwd123')
-            .click('@loginButton')
-        
+        login//aula sobre page objects
+            .with('zumbi@dospalmares.com.br','pwd123')
         sidebar
             .waitForElementVisible('@userInfo', 'Quilombo', 3000) //seletor CSS
             .assert.containsText('@userInfo', 'Quilombo')
