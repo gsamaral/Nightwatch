@@ -3,7 +3,7 @@ module.exports = {
 '@disabled': true,
 
      'login com sucesso': function (browser) {
-        let userInfo = '.user .info span' //seletor CSS
+        //let userInfo = '.user .info span' //seletor CSS
         let login = browser.page.login() //aula sobre page objects
         let sidebar = browser.page.sidebar()
 
