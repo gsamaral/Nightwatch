@@ -13,7 +13,8 @@ var loginActions= {
 module.exports = {
     url:'http://zombie-web:5000/login',
     commands: [loginActions], //aula sobre commands
-    elements: {//aula sobre page objects
+    //aula sobre page objects
+    elements: {
         form: '.card-login',
         emailInput:'input[name=email]',
         passInput:'input[name=password]', 

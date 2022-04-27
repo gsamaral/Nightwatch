@@ -1,14 +1,5 @@
 
 module.exports = {
-
-        before: (browser) => {
-            browser.resizeWindow(1024, 768)
-
-        },
-
-        after: (browser) => {
-            browser.end();
-        },
 /*'@disabled': true,*/
      'senha incorreta': function (browser) {
         

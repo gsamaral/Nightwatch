@@ -14,7 +14,6 @@ module.exports = {
         sidebar
             .waitForElementVisible('@userInfo', 'Quilombo', 3000) //seletor CSS
             .assert.containsText('@userInfo', 'Quilombo')
-            .end();
     }
 }
     /* 'Dado eu acesso a pagina de login': (browser) => {
