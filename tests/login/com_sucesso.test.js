@@ -12,10 +12,13 @@ module.exports = {
         login//aula sobre page objects
             .with('zumbi@dospalmares.com.br','pwd123')
         sidebar
-            .waitForElementVisible('@userInfo', 'Quilombo', 3000) //seletor CSS
-            .assert.containsText('@userInfo', 'Quilombo')
+            .expectLoggedUser('Quilombo')
     }
 }
+
+
+
+
     /* 'Dado eu acesso a pagina de login': (browser) => {
         browser
             .resizeWindow(1024, 768)

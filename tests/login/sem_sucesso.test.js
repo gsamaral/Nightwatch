@@ -8,16 +8,15 @@ module.exports = {
 
         login
             .with('zumbi@dospalmares.com.br','123abc')
-            .waitForElementVisible('@alertDanger',3000)
-            .assert.containsText('@alertDanger','Usuário e/ou senha inválidos')
+                //encapsular assert
+            .expectAlertDanger('Usuário e/ou senha inválidos')
     },
     'nao cadastrado':(browser)=>{
         let login = browser.page.login()
 
         login
             .with('exemplo@dospalmares.com.br','123abc')
-            .waitForElementVisible('@alertDanger',3000)
-            .assert.containsText('@alertDanger','Usuário e/ou senha inválidos')
+            .expectAlertDanger('Usuário e/ou senha inválidos')
 
     },
     'email nao informado': (browser)=>{
@@ -26,19 +25,14 @@ module.exports = {
         login
             .with('','123abc')
             .waitForElementVisible('@alertInfo',3000)
-            .assert.containsText('@alertInfo','Opps. Cadê o email?')
+            .expectAlertInfo('Opps. Cadê o email?')
     },
     'senha nao informada': (browser)=>{
         let login = browser.page.login()
 
         login
-            .navigate()
-            .waitForElementVisible('@form', 3000)
-            .setValue('@emailInput', 'exemplo@dospalmares.com.br')
-            .setValue('input[name=password]', '')
-            .click('@loginButton')
-            .waitForElementVisible('@alertInfo',3000)
-            .assert.containsText('@alertInfo','Opps. Cadê a senha?')
+            .with('eu@papito.io','')
+            .expectAlertInfo('Opps. Cadê a senha?')
     }
 }
     /* 'Dado eu acesso a pagina de login': (browser) => {

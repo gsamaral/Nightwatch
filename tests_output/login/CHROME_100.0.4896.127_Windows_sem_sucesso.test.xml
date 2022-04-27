@@ -5,9 +5,9 @@
 
   <testsuite name="login.sem_sucesso.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="4" time="7.210" timestamp="">
+    tests="4" time="7.013" timestamp="">
   
-    <testcase name="senha incorreta" classname="login.sem_sucesso.test" time="4.615" assertions="3">
+    <testcase name="senha incorreta" classname="login.sem_sucesso.test" time="3.541" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="nao cadastrado" classname="login.sem_sucesso.test" time="1.104" assertions="3">
+    <testcase name="nao cadastrado" classname="login.sem_sucesso.test" time="1.777" assertions="3">
 
     
 
@@ -25,7 +25,9 @@
     
     </testcase>
   
-    <testcase name="email nao informado" classname="login.sem_sucesso.test" time="0.7410" assertions="3">
+    <testcase name="email nao informado" classname="login.sem_sucesso.test" time="0.9170" assertions="4">
+
+    
 
     
 
@@ -34,7 +36,7 @@
     
     </testcase>
   
-    <testcase name="senha nao informada" classname="login.sem_sucesso.test" time="0.7500" assertions="3">
+    <testcase name="senha nao informada" classname="login.sem_sucesso.test" time="0.7780" assertions="3">
 
     
 
